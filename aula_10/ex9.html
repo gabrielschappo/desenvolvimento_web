@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de login</title>
+    <style>
+        body{
+            background-color: #34495e;
+            display: flex;
+            justify-content: center;
+        }
+        .forms{
+            background-color: #5d6d7e;
+            border: 1px solid;
+            border-radius: 6px;
+            padding: 30px;
+        }
+        .nome{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        #campo_nome{
+            border-radius: 8px;
+            height: 20px;
+            width: 200px;
+        }
+        .senha{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        #campo_senha{
+            border-radius: 8px;
+            height: 20px;
+            width: 200px;
+        }
+        .entrar{
+            text-align: center;
+        }
+        #entrar{
+            width: 100%;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 8px;
+            height: 23px;
+        }
+    </style>
+</head>
+<body>
+    <div class="forms">
+        <form>
+            <h2>Login</h2>
+            <div class="nome">
+                <label for="campo_nome"><b>Nome de usuário</b></label>
+                <input type="name" id="campo_nome" placeholder="Digite seu nome de usuário">
+            </div>
+            <div class="senha">
+                <label for="campo_senha"><b>Senha</b></label>
+                <input type="password" id="campo_senha" placeholder="Digite sua senha">
+            </div>
+            <div class="entrar">
+                <input type="submit" value="Entrar" id="entrar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

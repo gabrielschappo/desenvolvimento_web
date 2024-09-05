@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pet</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: center;
+        }
+        form{
+            background-color: white;
+            border: 1px solid;
+            box-shadow: 2px 1px 1px ;
+            border-radius: 8%;
+            margin-top: 100px;
+            width: 300px;
+        }
+        .nome{
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .tipo{
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .idade{
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .nome_dono{
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        #cadastro{
+            text-align: center;
+        }
+        #cadastrar{
+            background-color: whitesmoke;
+            border-radius: 8px;
+            width: 100px;
+            margin: 10px;
+        }
+        .cadastrar{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h3 id="cadastro">Cadastro de Pet</h3>
+        <div class="nome">
+            <label for="campo_nome">Nome do pet</label>
+            <input type="name" id="campo_nome" name="campo_nome" placeholder="Digite o nome do pet">
+        </div>
+        <div class="tipo">
+            <label for="campo_tipo">Tipo de animal</label>
+            <select id="campo_tipo" name="campo_tipo" style="height: 23px;">
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+                <option value="passaro">Passáro</option>
+                <option value="peixe">Peixe</option>
+                <option value="coelho">Coelho</option>
+                <option value="hamster">Hamster</option>
+            </select>
+        </div>
+        <div class="idade">
+            <label for="campo_idade">Idade</label>
+            <input type="number" id="campo_idade" name="campo_idade" placeholder="Digite a idade do pet">
+        </div>
+        <div class="nome_dono">
+            <label for="campo_nome_dono">Nome do dono</label>
+            <input type="name" id="campo_nome_dono" name="campo_nome_dono" placeholder="Digite o nome do dono">
+        </div>
+        <div class="cadastrar">
+            <input type="submit" value="Cadastrar" id="cadastrar">
+        </div>
+    </form>
+</body>
+</html>
