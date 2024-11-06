@@ -1,8 +1,4 @@
 let visor = document.getElementById('visor_num').placeholder
-let num = 0
-let res = 0
-let conta = 0
-let calc = 0
 
 function add_item(item){
     add_num = item
